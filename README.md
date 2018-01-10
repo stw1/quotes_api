@@ -4,4 +4,11 @@ Based on the serverless api CRUD Example.  This examples uses serverless framewo
 
 
 ## Create a quote
-  - POST https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/todos --data '{ "author": "John Smith", "quote": "Trees are nice" }'
+  - curl -X POST https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/todos --data '{ "author": "John Smith", "quote": "Trees are nice" }'
+  
+  
+## List all quotes
+  - curl https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/todos
+  
+## Deploy
+serverless deploy --aws-profile serverless (note this depends on the name of your aws profile)
